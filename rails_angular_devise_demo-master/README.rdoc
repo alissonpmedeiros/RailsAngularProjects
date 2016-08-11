@@ -1,0 +1,36 @@
+== README
+
+--- Naming your modules ---
+
+1. For ngResource:
+[role].resource.[resource_name]
+
+2. For ngController:
+[role].ctrl.[controller_name]
+
+3. For filters:
+[role].filter.[filter_name]
+
+--- Naming Conventions ---
+1. For ngControllers:
+File: [ViewName]-ctrl.js
+Controller Name: [role][ViewName]Ctrl
+
+2. For filters:
+File: [filter-name]-filter.js
+Filter Name: [role][filter-name]Filter
+
+Note 1: If Role does not exist (public pages), it should be blank.
+Note 2: [role] is used only there are two filters/controllers that does the same function. Ex: filter for landlord/tenant activities
+--- File structure ---
+
+1. For ngResource:
+firstplace/app/assets/javascripts/resource/
+
+2. For HTML/ngControllers:
+firstplace/app/assets/javascripts/demo/[role]/[name_of_view]/
+
+2. For filters:
+firstplace/app/assets/javascripts/demo/filters/[role]/[name_of_filter]/
+
+Note: If role does not exist, folder should be named 'public'.

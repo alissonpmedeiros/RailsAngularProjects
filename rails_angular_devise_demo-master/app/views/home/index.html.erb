@@ -1,0 +1,22 @@
+<body ng-app="demo">
+ <div class="container">
+    <div class="header">
+      <nav>
+        <ul class="nav nav-pills pull-right" ng-controller="sessionCtrl as session">
+          <li role="presentation"><a href="#/">Home</a></li>
+          <li role="presentation" ng-hide="isAuthenticated"><a href="#/sign_in">Sign In</a></li>
+          <li role="presentation" ng-show="isAuthenticated"><a href ="" ng-click="session.logout()">Logout</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Demo</h3>
+    </div>
+
+    <div ng-view class="view-frame"></div>
+
+    <footer class="footer">
+      <p>&copy; Ademar Tutor 2015</p>
+    </footer>
+
+  </div> <!-- /container -->
+
+</body>
